@@ -24,6 +24,10 @@ module.exports = (function(){
 
     return{
         getAll:getAll,
-        getOne:getOne
-    }
+        getOne:getOne,
+        create:create,
+        update:update,
+        deleteOne:deleteOne
+
+        }
 })();
