@@ -8,8 +8,26 @@ module.exports = (function(){
         res.send('hello utente')
     }
 
+    var create =  function(req,res){
+        res.json(req.body)
+    }
+
+    var update = function(req,res){
+        res.json({
+            id: req.params.id, 
+            dati: req.body})
+    }
+
+    var deleteOne = function(req,res){
+        res.json({
+            id: req.params.id})
+    }
+
     return{
         getAll:getAll,
-        getOne:getOne
+        getOne:getOne,
+        create:create,
+        update:update,
+        deleteOne:deleteOne
     }
 })();
