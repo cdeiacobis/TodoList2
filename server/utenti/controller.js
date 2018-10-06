@@ -4,8 +4,12 @@ module.exports = (function(){
         res.send('hello hello')
     }
 
+    var getOne=function(req,res){
+        res.send('hello utente')
+    }
 
     return{
-        getAll:getAll
+        getAll:getAll,
+        getOne:getOne
     }
 })();
