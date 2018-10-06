@@ -1,7 +1,7 @@
 var express = require ('express');
 var app= express();
 
-//require delle rotee della app
+//require delle routes della app
 require('./routes/routes.js')(express, app);
 
 
