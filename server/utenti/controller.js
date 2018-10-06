@@ -7,7 +7,6 @@ module.exports = (function(){
     var getOne=function(req,res){
         res.send('hello utente')
     }
-xcgxgfgxgfxgfxg
     var create =  function(req,res){
         res.json(req.body)
     }
@@ -25,9 +24,6 @@ xcgxgfgxgfxgfxg
 
     return{
         getAll:getAll,
-        getOne:getOne,
-        create:create,
-        update:update,
-        deleteOne:deleteOne
+        getOne:getOne
     }
 })();
